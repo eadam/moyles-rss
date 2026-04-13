@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>net.chrismoyles.rssproxy</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>__HOME__/Applications/MoylesRSSProxy.app/Contents/MacOS/applet</string>
+    </array>
+
+    <!-- Run every 2 hours -->
+    <key>StartInterval</key>
+    <integer>7200</integer>
+
+    <!-- Also run immediately when loaded -->
+    <key>RunAtLoad</key>
+    <true/>
+
+    <!-- Logs -->
+    <key>StandardOutPath</key>
+    <string>__HOME__/Library/Logs/moyles-rss.log</string>
+    <key>StandardErrorPath</key>
+    <string>__HOME__/Library/Logs/moyles-rss.log</string>
+</dict>
+</plist>
