@@ -23,10 +23,10 @@ from typing import Optional
 
 UPSTREAM_URL    = "https://chrismoyles.net/shows/shows.rss"
 SCRIPT_DIR      = Path(__file__).parent.resolve()
-REPO_DIR        = SCRIPT_DIR / "moyles-rss"
+REPO_DIR        = SCRIPT_DIR
 FEED_OUT        = REPO_DIR / "feed.xml"
 SNAPSHOT_DIR    = REPO_DIR / "snapshots"
-DURATION_CACHE  = SCRIPT_DIR / "duration_cache.json"
+DURATION_CACHE  = REPO_DIR / "duration_cache.json"
 FFPROBE_PATH    = "/opt/homebrew/bin/ffprobe"
 LOG_PREFIX      = "[moyles-rss]"
 MAX_SNAPSHOTS   = 14         # ~7 days at 2 runs/day

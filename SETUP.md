@@ -30,86 +30,72 @@ gh auth login
 
 ## Step 1 — Clone the Repo
 
-The script and config files live in the same iCloud developer folder as the git repo clone:
+The repo lives in a local folder (not iCloud — background processes can't reliably access iCloud Drive):
 
 ```bash
-mkdir -p ~/Library/Mobile\ Documents/com~apple~CloudDocs/Developer/chrismoylespodcast
-cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/Developer/chrismoylespodcast
+mkdir -p ~/Developer/chrismoylespodcast
+cd ~/Developer/chrismoylespodcast
 git clone https://github.com/eadam/moyles-rss.git
 ```
 
----
-
-## Step 2 — Copy the Script Out of the Repo
-
-The script needs to live in the parent folder (one level above the git repo), not inside it — this keeps `rss_proxy.py` out of git's working tree so it doesn't get committed on every run:
-
-```bash
-cp moyles-rss/rss_proxy.py .
-```
-
-The script auto-detects its own location and sets `REPO_DIR` relative to itself, so no path changes are needed as long as `rss_proxy.py` is in:
-```
-.../chrismoylespodcast/rss_proxy.py          ← script here
-.../chrismoylespodcast/moyles-rss/           ← repo here
-```
+The script (`rss_proxy.py`) lives inside the repo and runs directly from there.
 
 ---
 
-## Step 3 — Set Git Identity in the Repo
+## Step 2 — Set Git Identity in the Repo
 
 ```bash
-cd moyles-rss
+cd ~/Developer/chrismoylespodcast/moyles-rss
 git config --local user.name "Your Name"
 git config --local user.email "your@email.com"
-cd ..
 ```
 
 ---
 
-## Step 4 — Test the Script Once Manually
+## Step 3 — Test the Script Once Manually
 
 ```bash
+cd ~/Developer/chrismoylespodcast/moyles-rss
 python3 rss_proxy.py
 ```
 
 Expected output:
 - Fetches upstream feed
-- Saves a snapshot to `moyles-rss/snapshots/`
-- Probes duration for any uncached episodes (slow on first run — ~1-2 min for 25 episodes)
-- Writes `moyles-rss/feed.xml`
+- Saves a snapshot to `snapshots/`
+- Probes duration for any uncached episodes (slow on first run — ~1-2 min for 25+ episodes)
+- Writes `feed.xml`
 - Commits and pushes to GitHub
 
-Check the log: all 25 (or however many) items fixed, 0 title parse warnings.
+Check the output: all items fixed, 0 title parse warnings.
 
 ---
 
-## Step 5 — Create the AppleScript App Wrapper
+## Step 4 — Create the AppleScript App Wrapper
 
-macOS Full Disk Access can't be granted to Python (it's a symlink). The workaround is a `.app` bundle that wraps the script — `.app` bundles are recognised by macOS FDA.
+macOS Full Disk Access can't be granted to Python (it's a symlink chain). The workaround is a `.app` bundle that wraps the script — `.app` bundles are recognised by macOS FDA. Even though the repo is now on a local path, the `.app` wrapper is still needed for launchd to run the script reliably.
 
 ```bash
 mkdir -p ~/Applications
 
-cat > /tmp/moyles_proxy.applescript << 'EOF'
-do shell script "/opt/homebrew/bin/python3 '/Users/YOUR_USERNAME/Library/Mobile Documents/com~apple~CloudDocs/Developer/chrismoylespodcast/rss_proxy.py' >> /Users/YOUR_USERNAME/Library/Logs/moyles-rss.log 2>&1"
-EOF
+cat > /tmp/moyles_proxy.applescript << 'APPLESCRIPT'
+do shell script "/opt/homebrew/bin/python3 'HOMEDIR/Developer/chrismoylespodcast/moyles-rss/rss_proxy.py' >> HOMEDIR/Library/Logs/moyles-rss.log 2>&1"
+APPLESCRIPT
 
-# Replace YOUR_USERNAME with the actual macOS username
-sed -i '' "s/YOUR_USERNAME/$(whoami)/g" /tmp/moyles_proxy.applescript
+# Substitute the real home directory path
+sed -i '' "s|HOMEDIR|$HOME|g" /tmp/moyles_proxy.applescript
 
 osacompile -o ~/Applications/MoylesRSSProxy.app /tmp/moyles_proxy.applescript
 ```
 
 ---
 
-## Step 6 — Install the launchd Plist
+## Step 5 — Install the launchd Plist
 
 The plist schedules the script to run every 2 hours:
 
 ```bash
-# Substitute __HOME__ with your actual home directory path, then install
-sed "s|__HOME__|$HOME|g" moyles-rss/net.chrismoyles.rssproxy.plist > ~/Library/LaunchAgents/net.chrismoyles.rssproxy.plist
+cd ~/Developer/chrismoylespodcast/moyles-rss
+sed "s|__HOME__|$HOME|g" net.chrismoyles.rssproxy.plist > ~/Library/LaunchAgents/net.chrismoyles.rssproxy.plist
 launchctl load ~/Library/LaunchAgents/net.chrismoyles.rssproxy.plist
 ```
 
@@ -121,9 +107,7 @@ launchctl list | grep chrismoyles
 
 ---
 
-## Step 7 — Grant Full Disk Access to the App
-
-The launchd job calls `~/Applications/MoylesRSSProxy.app` which needs FDA to access iCloud Drive files.
+## Step 6 — Grant Full Disk Access to the App
 
 1. Open **System Settings → Privacy & Security → Full Disk Access**
 2. Click **+**
@@ -132,7 +116,7 @@ The launchd job calls `~/Applications/MoylesRSSProxy.app` which needs FDA to acc
 
 ---
 
-## Step 8 — Verify the Job is Firing
+## Step 7 — Verify the Job is Firing
 
 Wait a few minutes (the job runs on load), then check the log:
 
@@ -159,7 +143,7 @@ launchctl load ~/Library/LaunchAgents/net.chrismoyles.rssproxy.plist
 
 ---
 
-## Step 9 — Subscribe Apple Podcasts
+## Step 8 — Subscribe Apple Podcasts
 
 In Apple Podcasts on iPhone:
 1. Remove any existing subscription to `https://chrismoyles.net/shows/shows.rss`
@@ -173,7 +157,7 @@ Note: GitHub Pages can take a few minutes to serve a newly pushed file. If the f
 
 | Symptom | Likely cause | Fix |
 |---------|-------------|-----|
-| `Operation not permitted` in log | FDA not granted | Re-do Step 7; make sure to select the `.app` not a folder |
+| `Operation not permitted` in log | FDA not granted | Re-do Step 6; make sure to select the `.app` not a folder |
 | `can't push to GitHub` | `gh` not authenticated | Run `gh auth login` |
 | Episodes out of order in Apple Podcasts | Old subscription still active | Remove old feed, re-add GitHub Pages URL |
 | Duration shows 0:00 | `ffprobe` not found | Run `brew install ffmpeg` |
@@ -185,7 +169,7 @@ Note: GitHub Pages can take a few minutes to serve a newly pushed file. If the f
 
 ```bash
 # Run the script manually
-python3 ~/Library/Mobile\ Documents/com~apple~CloudDocs/Developer/chrismoylespodcast/rss_proxy.py
+cd ~/Developer/chrismoylespodcast/moyles-rss && python3 rss_proxy.py
 
 # Watch the log live
 tail -f ~/Library/Logs/moyles-rss.log
@@ -206,10 +190,9 @@ curl -s https://eadam.github.io/moyles-rss/feed.xml | head -5
 
 | File | Location |
 |------|---------|
-| Transformer script | `~/Library/Mobile Documents/.../chrismoylespodcast/rss_proxy.py` |
-| Git repo + feed | `~/Library/Mobile Documents/.../chrismoylespodcast/moyles-rss/` |
-| Duration cache | `~/Library/Mobile Documents/.../chrismoylespodcast/duration_cache.json` |
-| launchd plist (source) | `moyles-rss/net.chrismoyles.rssproxy.plist` |
+| Repo + script + feed | `~/Developer/chrismoylespodcast/moyles-rss/` |
+| Duration cache | `~/Developer/chrismoylespodcast/moyles-rss/duration_cache.json` (gitignored, auto-regenerates) |
+| launchd plist (source) | `moyles-rss/net.chrismoyles.rssproxy.plist` (contains `__HOME__` placeholder) |
 | launchd plist (installed) | `~/Library/LaunchAgents/net.chrismoyles.rssproxy.plist` |
 | AppleScript app | `~/Applications/MoylesRSSProxy.app` |
 | Log file | `~/Library/Logs/moyles-rss.log` |
