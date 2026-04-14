@@ -78,7 +78,12 @@ macOS Full Disk Access can't be granted to Python (it's a symlink chain). The wo
 mkdir -p ~/Applications
 
 cat > /tmp/moyles_proxy.applescript << 'APPLESCRIPT'
-do shell script "/opt/homebrew/bin/python3 'HOMEDIR/Developer/chrismoylespodcast/moyles-rss/rss_proxy.py' >> HOMEDIR/Library/Logs/moyles-rss.log 2>&1"
+try
+    do shell script "/opt/homebrew/bin/python3 'HOMEDIR/Developer/chrismoylespodcast/moyles-rss/rss_proxy.py' >> HOMEDIR/Library/Logs/moyles-rss.log 2>&1"
+on error errMsg number errNum
+    set theTime to do shell script "date '+%H:%M on %d %b'"
+    display notification "Failed at " & theTime & " — see ~/Library/Logs/moyles-rss.log for details" with title "Moyles RSS Proxy" sound name "Basso"
+end try
 APPLESCRIPT
 
 # Substitute the real home directory path
