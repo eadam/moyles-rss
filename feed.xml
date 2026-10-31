@@ -22,8 +22,50 @@
 		<itunes:explicit>no</itunes:explicit>
 		<ns1:rating scheme="urn:simple">nonadult</ns1:rating>
 		<atom:link href="http://chrismoyles.net/shows/shows.rss" rel="self" type="application/rss+xml" />
-				<pubDate>Tue, 27 Oct 2026 00:00:00 +0000</pubDate>
-		<lastBuildDate>Fri, 30 Oct 2026 06:00:00 +0000</lastBuildDate>
+				<pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
+		<lastBuildDate>Sat, 31 Oct 2026 06:00:00 +0000</lastBuildDate>
+		<item>
+				<title>Friday, 30th October 2026 - Chris Moyles Radio X Replay</title>
+				<description>A replay of the Chris Moyles Radio X Show from Friday, 30th October 2026. Includes edited podcast. Thanks to James H for the capture and to ianpwilliams for editing.</description>
+				<itunes:subtitle>Historical Chris Moyles Radio X Shows without the music!</itunes:subtitle>
+				<itunes:summary>A replay of the Chris Moyles Radio X Show from Friday, 30th October 2026. Includes edited podcast. Thanks to James H for the capture and to ianpwilliams for editing.</itunes:summary>
+				<pubDate>Fri, 30 Oct 2026 06:00:00 +0000</pubDate>
+				<itunes:duration>2:10:42</itunes:duration>
+				<enclosure url="https://archive.org/download/20261030-radio-x-moyles-edited-including-platinum-hour-and-podcast/20261030%20Radio%20X%20Moyles%20Edited%20Including%20Podcast.mp3" type="audio/mpeg" length="125492042" />
+				<guid isPermaLink="false">cm-radiox-20261030</guid>
+				<link>https://archive.org/download/20261030-radio-x-moyles-edited-including-platinum-hour-and-podcast/20261030%20Radio%20X%20Moyles%20Edited%20Including%20Podcast.mp3</link>
+				<itunes:explicit>clean</itunes:explicit>
+				<ns1:content url="https://archive.org/download/20261030-radio-x-moyles-edited-including-platinum-hour-and-podcast/20261030%20Radio%20X%20Moyles%20Edited%20Including%20Podcast.mp3" fileSize="125492042" type="audio/mpeg" medium="audio" expression="full" duration="7842" />
+				<itunes:author>chrismoyles.net</itunes:author>
+			</item>
+		<item>
+				<title>Thursday, 29th October 2026 - Chris Moyles Radio X Replay</title>
+				<description>A replay of the Chris Moyles Radio X Show from Thursday, 29th October 2026. Thanks to ianpwilliams for the capture and to ianpwilliams for editing.</description>
+				<itunes:subtitle>Historical Chris Moyles Radio X Shows without the music!</itunes:subtitle>
+				<itunes:summary>A replay of the Chris Moyles Radio X Show from Thursday, 29th October 2026. Thanks to ianpwilliams for the capture and to ianpwilliams for editing.</itunes:summary>
+				<pubDate>Thu, 29 Oct 2026 06:00:00 +0000</pubDate>
+				<itunes:duration>2:19:36</itunes:duration>
+				<enclosure url="https://archive.org/download/20261030-radio-x-moyles-edited-including-platinum-hour-and-podcast/20261029%20Radio%20X%20Moyles%20Edited.mp3" type="audio/mpeg" length="134035928" />
+				<guid isPermaLink="false">cm-radiox-20261029</guid>
+				<link>https://archive.org/download/20261030-radio-x-moyles-edited-including-platinum-hour-and-podcast/20261029%20Radio%20X%20Moyles%20Edited.mp3</link>
+				<itunes:explicit>clean</itunes:explicit>
+				<ns1:content url="https://archive.org/download/20261030-radio-x-moyles-edited-including-platinum-hour-and-podcast/20261029%20Radio%20X%20Moyles%20Edited.mp3" fileSize="134035928" type="audio/mpeg" medium="audio" expression="full" duration="8376" />
+				<itunes:author>chrismoyles.net</itunes:author>
+			</item>
+		<item>
+				<title>Wednesday, 28th October 2026 - Chris Moyles Radio X Replay</title>
+				<description>A replay of the Chris Moyles Radio X Show from Wednesday, 28th October 2026. Thanks to ianpwilliams for the capture and to ianpwilliams for editing.</description>
+				<itunes:subtitle>Historical Chris Moyles Radio X Shows without the music!</itunes:subtitle>
+				<itunes:summary>A replay of the Chris Moyles Radio X Show from Wednesday, 28th October 2026. Thanks to ianpwilliams for the capture and to ianpwilliams for editing.</itunes:summary>
+				<pubDate>Wed, 28 Oct 2026 06:00:00 +0000</pubDate>
+				<itunes:duration>2:26:35</itunes:duration>
+				<enclosure url="https://archive.org/download/20261030-radio-x-moyles-edited-including-platinum-hour-and-podcast/20261028%20Radio%20X%20Moyles%20Edited.mp3" type="audio/mpeg" length="140747935" />
+				<guid isPermaLink="false">cm-radiox-20261028</guid>
+				<link>https://archive.org/download/20261030-radio-x-moyles-edited-including-platinum-hour-and-podcast/20261028%20Radio%20X%20Moyles%20Edited.mp3</link>
+				<itunes:explicit>clean</itunes:explicit>
+				<ns1:content url="https://archive.org/download/20261030-radio-x-moyles-edited-including-platinum-hour-and-podcast/20261028%20Radio%20X%20Moyles%20Edited.mp3" fileSize="140747935" type="audio/mpeg" medium="audio" expression="full" duration="8796" />
+				<itunes:author>chrismoyles.net</itunes:author>
+			</item>
 		<item>
 				<title>Tuesday, 27th October 2026 - Chris Moyles Radio X Replay</title>
 				<description>A replay of the Chris Moyles Radio X Show from Tuesday, 27th October 2026. Thanks to ianpwilliams for the capture and to ianpwilliams for editing.</description>
@@ -330,48 +372,6 @@
 				<link>https://archive.org/download/20260925-radio-x-moyles-edited-including-platinum-hour-and-podcast/20260925%20Radio%20X%20Moyles%20Edited%20Including%20Podcast.mp3</link>
 				<itunes:explicit>clean</itunes:explicit>
 				<ns1:content url="https://archive.org/download/20260925-radio-x-moyles-edited-including-platinum-hour-and-podcast/20260925%20Radio%20X%20Moyles%20Edited%20Including%20Podcast.mp3" fileSize="119604251" type="audio/mpeg" medium="audio" expression="full" duration="7474" />
-				<itunes:author>chrismoyles.net</itunes:author>
-			</item>
-		<item>
-				<title>Thursday, 24th September 2026 - Chris Moyles Radio X Replay</title>
-				<description>A replay of the Chris Moyles Radio X Show from Thursday, 24th September 2026. Thanks to ianpwilliams for the capture and to ianpwilliams for editing.</description>
-				<itunes:subtitle>Historical Chris Moyles Radio X Shows without the music!</itunes:subtitle>
-				<itunes:summary>A replay of the Chris Moyles Radio X Show from Thursday, 24th September 2026. Thanks to ianpwilliams for the capture and to ianpwilliams for editing.</itunes:summary>
-				<pubDate>Thu, 24 Sep 2026 06:00:00 +0000</pubDate>
-				<itunes:duration>2:26:24</itunes:duration>
-				<enclosure url="https://archive.org/download/20260924-radio-x-moyles-edited/20260924%20Radio%20X%20Moyles%20Edited.mp3" type="audio/mpeg" length="140564032" />
-				<guid isPermaLink="false">cm-radiox-20260924</guid>
-				<link>https://archive.org/download/20260924-radio-x-moyles-edited/20260924%20Radio%20X%20Moyles%20Edited.mp3</link>
-				<itunes:explicit>clean</itunes:explicit>
-				<ns1:content url="https://archive.org/download/20260924-radio-x-moyles-edited/20260924%20Radio%20X%20Moyles%20Edited.mp3" fileSize="140564032" type="audio/mpeg" medium="audio" expression="full" duration="8784" />
-				<itunes:author>chrismoyles.net</itunes:author>
-			</item>
-		<item>
-				<title>Wednesday, 23rd September 2026 - Chris Moyles Radio X Replay</title>
-				<description>A replay of the Chris Moyles Radio X Show from Wednesday, 23rd September 2026. Thanks to ianpwilliams for the capture and to ianpwilliams for editing.</description>
-				<itunes:subtitle>Historical Chris Moyles Radio X Shows without the music!</itunes:subtitle>
-				<itunes:summary>A replay of the Chris Moyles Radio X Show from Wednesday, 23rd September 2026. Thanks to ianpwilliams for the capture and to ianpwilliams for editing.</itunes:summary>
-				<pubDate>Wed, 23 Sep 2026 06:00:00 +0000</pubDate>
-				<itunes:duration>2:17:12</itunes:duration>
-				<enclosure url="https://archive.org/download/20260923-radio-x-moyles-edited/20260923%20Radio%20X%20Moyles%20Edited.mp3" type="audio/mpeg" length="131732137" />
-				<guid isPermaLink="false">cm-radiox-20260923</guid>
-				<link>https://archive.org/download/20260923-radio-x-moyles-edited/20260923%20Radio%20X%20Moyles%20Edited.mp3</link>
-				<itunes:explicit>clean</itunes:explicit>
-				<ns1:content url="https://archive.org/download/20260923-radio-x-moyles-edited/20260923%20Radio%20X%20Moyles%20Edited.mp3" fileSize="131732137" type="audio/mpeg" medium="audio" expression="full" duration="8232" />
-				<itunes:author>chrismoyles.net</itunes:author>
-			</item>
-		<item>
-				<title>Tuesday, 22nd September 2026 - Chris Moyles Radio X Replay</title>
-				<description>A replay of the Chris Moyles Radio X Show from Tuesday, 22nd September 2026. Thanks to ianpwilliams for the capture and to ianpwilliams for editing.</description>
-				<itunes:subtitle>Historical Chris Moyles Radio X Shows without the music!</itunes:subtitle>
-				<itunes:summary>A replay of the Chris Moyles Radio X Show from Tuesday, 22nd September 2026. Thanks to ianpwilliams for the capture and to ianpwilliams for editing.</itunes:summary>
-				<pubDate>Tue, 22 Sep 2026 06:00:00 +0000</pubDate>
-				<itunes:duration>2:16:43</itunes:duration>
-				<enclosure url="https://archive.org/download/20260922-radio-x-moyles-edited/20260922%20Radio%20X%20Moyles%20Edited.mp3" type="audio/mpeg" length="131268202" />
-				<guid isPermaLink="false">cm-radiox-20260922</guid>
-				<link>https://archive.org/download/20260922-radio-x-moyles-edited/20260922%20Radio%20X%20Moyles%20Edited.mp3</link>
-				<itunes:explicit>clean</itunes:explicit>
-				<ns1:content url="https://archive.org/download/20260922-radio-x-moyles-edited/20260922%20Radio%20X%20Moyles%20Edited.mp3" fileSize="131268202" type="audio/mpeg" medium="audio" expression="full" duration="8203" />
 				<itunes:author>chrismoyles.net</itunes:author>
 			</item>
 	</channel>
