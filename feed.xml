@@ -22,8 +22,22 @@
 		<itunes:explicit>no</itunes:explicit>
 		<ns1:rating scheme="urn:simple">nonadult</ns1:rating>
 		<atom:link href="http://chrismoyles.net/shows/shows.rss" rel="self" type="application/rss+xml" />
-				<pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
+				<pubDate>Sun, 01 Nov 2026 00:00:00 +0000</pubDate>
 		<lastBuildDate>Sun, 01 Nov 2026 06:00:00 +0000</lastBuildDate>
+		<item>
+				<title>Sunday, 1st November 2026 - Chris Moyles Radio X Replay</title>
+				<description>A replay of the Chris Moyles Radio X Show from Sunday, 1st November 2026. Saturday Show. Thanks to James H for the capture and to ianpwilliams for editing.</description>
+				<itunes:subtitle>Historical Chris Moyles Radio X Shows without the music!</itunes:subtitle>
+				<itunes:summary>A replay of the Chris Moyles Radio X Show from Sunday, 1st November 2026. Saturday Show. Thanks to James H for the capture and to ianpwilliams for editing.</itunes:summary>
+				<pubDate>Sun, 01 Nov 2026 06:00:00 +0000</pubDate>
+				<itunes:duration>1:36:49</itunes:duration>
+				<enclosure url="https://archive.org/download/20261031-radio-x-moyles-edited-saturday-show/20261031%20Radio%20X%20Moyles%20Edited%20-%20Saturday%20Show.mp3" type="audio/mpeg" length="92971888" />
+				<guid isPermaLink="false">cm-radiox-20261101</guid>
+				<link>https://archive.org/download/20261031-radio-x-moyles-edited-saturday-show/20261031%20Radio%20X%20Moyles%20Edited%20-%20Saturday%20Show.mp3</link>
+				<itunes:explicit>clean</itunes:explicit>
+				<ns1:content url="https://archive.org/download/20261031-radio-x-moyles-edited-saturday-show/20261031%20Radio%20X%20Moyles%20Edited%20-%20Saturday%20Show.mp3" fileSize="92971888" type="audio/mpeg" medium="audio" expression="full" duration="5810" />
+				<itunes:author>chrismoyles.net</itunes:author>
+			</item>
 		<item>
 				<title>Friday, 30th October 2026 - Chris Moyles Radio X Replay</title>
 				<description>A replay of the Chris Moyles Radio X Show from Friday, 30th October 2026. Includes edited podcast. Thanks to James H for the capture and to ianpwilliams for editing.</description>
@@ -358,20 +372,6 @@
 				<link>https://archive.org/download/20260926-radio-x-moyles-edited-saturday-show/20260926%20Radio%20X%20Moyles%20Edited%20-%20Saturday%20Show.mp3</link>
 				<itunes:explicit>clean</itunes:explicit>
 				<ns1:content url="https://archive.org/download/20260926-radio-x-moyles-edited-saturday-show/20260926%20Radio%20X%20Moyles%20Edited%20-%20Saturday%20Show.mp3" fileSize="98628130" type="audio/mpeg" medium="audio" expression="full" duration="6163" />
-				<itunes:author>chrismoyles.net</itunes:author>
-			</item>
-		<item>
-				<title>Friday, 25th September 2026 - Chris Moyles Radio X Replay</title>
-				<description>A replay of the Chris Moyles Radio X Show from Friday, 25th September 2026. Includes edited podcast. Thanks to James H for the capture and to ianpwilliams for editing.</description>
-				<itunes:subtitle>Historical Chris Moyles Radio X Shows without the music!</itunes:subtitle>
-				<itunes:summary>A replay of the Chris Moyles Radio X Show from Friday, 25th September 2026. Includes edited podcast. Thanks to James H for the capture and to ianpwilliams for editing.</itunes:summary>
-				<pubDate>Fri, 25 Sep 2026 06:00:00 +0000</pubDate>
-				<itunes:duration>2:04:34</itunes:duration>
-				<enclosure url="https://archive.org/download/20260925-radio-x-moyles-edited-including-platinum-hour-and-podcast/20260925%20Radio%20X%20Moyles%20Edited%20Including%20Podcast.mp3" type="audio/mpeg" length="119604251" />
-				<guid isPermaLink="false">cm-radiox-20260925</guid>
-				<link>https://archive.org/download/20260925-radio-x-moyles-edited-including-platinum-hour-and-podcast/20260925%20Radio%20X%20Moyles%20Edited%20Including%20Podcast.mp3</link>
-				<itunes:explicit>clean</itunes:explicit>
-				<ns1:content url="https://archive.org/download/20260925-radio-x-moyles-edited-including-platinum-hour-and-podcast/20260925%20Radio%20X%20Moyles%20Edited%20Including%20Podcast.mp3" fileSize="119604251" type="audio/mpeg" medium="audio" expression="full" duration="7474" />
 				<itunes:author>chrismoyles.net</itunes:author>
 			</item>
 	</channel>
