@@ -22,8 +22,22 @@
 		<itunes:explicit>no</itunes:explicit>
 		<ns1:rating scheme="urn:simple">nonadult</ns1:rating>
 		<atom:link href="http://chrismoyles.net/shows/shows.rss" rel="self" type="application/rss+xml" />
-				<pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+				<pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
 		<lastBuildDate>Fri, 06 Nov 2026 06:00:00 +0000</lastBuildDate>
+		<item>
+				<title>Friday, 6th November 2026 - Chris Moyles Radio X Replay</title>
+				<description>A replay of the Chris Moyles Radio X Show from Friday, 6th November 2026. Includes edited podcast. Thanks to James H for the capture and to ianpwilliams for editing.</description>
+				<itunes:subtitle>Historical Chris Moyles Radio X Shows without the music!</itunes:subtitle>
+				<itunes:summary>A replay of the Chris Moyles Radio X Show from Friday, 6th November 2026. Includes edited podcast. Thanks to James H for the capture and to ianpwilliams for editing.</itunes:summary>
+				<pubDate>Fri, 06 Nov 2026 06:00:00 +0000</pubDate>
+				<itunes:duration>2:02:56</itunes:duration>
+				<enclosure url="https://archive.org/download/20261106-radio-x-moyles-edited-including-platinum-hour-and-podcast/20261106%20Radio%20X%20Moyles%20Edited%20Including%20Podcast.mp3" type="audio/mpeg" length="118036068" />
+				<guid isPermaLink="false">cm-radiox-20261106</guid>
+				<link>https://archive.org/download/20261106-radio-x-moyles-edited-including-platinum-hour-and-podcast/20261106%20Radio%20X%20Moyles%20Edited%20Including%20Podcast.mp3</link>
+				<itunes:explicit>clean</itunes:explicit>
+				<ns1:content url="https://archive.org/download/20261106-radio-x-moyles-edited-including-platinum-hour-and-podcast/20261106%20Radio%20X%20Moyles%20Edited%20Including%20Podcast.mp3" fileSize="118036068" type="audio/mpeg" medium="audio" expression="full" duration="7376" />
+				<itunes:author>chrismoyles.net</itunes:author>
+			</item>
 		<item>
 				<title>Thursday, 5th November 2026 - Chris Moyles Radio X Replay</title>
 				<description>A replay of the Chris Moyles Radio X Show from Thursday, 5th November 2026. Thanks to ianpwilliams for the capture and to ianpwilliams for editing.</description>
@@ -358,20 +372,6 @@
 				<link>https://archive.org/download/20261002-radio-x-moyles-edited-including-platinum-hour-and-podcast/20261002%20Radio%20X%20Moyles%20Edited%20Including%20Podcast.mp3</link>
 				<itunes:explicit>clean</itunes:explicit>
 				<ns1:content url="https://archive.org/download/20261002-radio-x-moyles-edited-including-platinum-hour-and-podcast/20261002%20Radio%20X%20Moyles%20Edited%20Including%20Podcast.mp3" fileSize="129748121" type="audio/mpeg" medium="audio" expression="full" duration="8108" />
-				<itunes:author>chrismoyles.net</itunes:author>
-			</item>
-		<item>
-				<title>Thursday, 1st October 2026 - Chris Moyles Radio X Replay</title>
-				<description>A replay of the Chris Moyles Radio X Show from Thursday, 1st October 2026. Thanks to ianpwilliams for the capture and to ianpwilliams for editing.</description>
-				<itunes:subtitle>Historical Chris Moyles Radio X Shows without the music!</itunes:subtitle>
-				<itunes:summary>A replay of the Chris Moyles Radio X Show from Thursday, 1st October 2026. Thanks to ianpwilliams for the capture and to ianpwilliams for editing.</itunes:summary>
-				<pubDate>Thu, 01 Oct 2026 06:00:00 +0000</pubDate>
-				<itunes:duration>2:18:50</itunes:duration>
-				<enclosure url="https://archive.org/download/20261001-radio-x-moyles-edited/20261001%20Radio%20X%20Moyles%20Edited.mp3" type="audio/mpeg" length="133307843" />
-				<guid isPermaLink="false">cm-radiox-20261001</guid>
-				<link>https://archive.org/download/20261001-radio-x-moyles-edited/20261001%20Radio%20X%20Moyles%20Edited.mp3</link>
-				<itunes:explicit>clean</itunes:explicit>
-				<ns1:content url="https://archive.org/download/20261001-radio-x-moyles-edited/20261001%20Radio%20X%20Moyles%20Edited.mp3" fileSize="133307843" type="audio/mpeg" medium="audio" expression="full" duration="8331" />
 				<itunes:author>chrismoyles.net</itunes:author>
 			</item>
 	</channel>
